@@ -1,0 +1,17 @@
+services:
+  profile-counter:
+    build: .
+    env_file:
+      - .env
+    container_name: profile-counter
+    ports:
+      - "${PORT}:${PORT}"
+    depends_on:
+      - profile-counter-redis
+
+  profile-counter-redis:
+    image: redis:7
+    container_name: profile-counter-redis
+    restart: unless-stopped
+    volumes:
+      - ./.redis-data:/data
