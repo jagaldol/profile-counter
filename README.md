@@ -12,7 +12,9 @@ A self-hosted profile counter created as a replacement for the now-defunct `http
 
 ![Profile Counter Repo :: Visitor's Count](https://server.jagaldol.com/profile-counter/jagaldol-profile-counter/count.svg)
 
-the counter for this repo
+This badge shows the counter for this repository.
+
+👉 Visit [https://server.jagaldol.com/profile-counter](https://server.jagaldol.com/profile-counter) to see the usage guide and try it out live.
 
 ## 🛠️ Usage
 
