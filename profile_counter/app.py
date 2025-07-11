@@ -80,6 +80,25 @@ def get_count(key: str):
         return Response(content="Internal Server Error", status_code=500)
 
 
+@app.get("/")
+def root():
+    html_content = """
+    <html>
+        <head><title>Profile Counter</title></head>
+        <body>
+            <h1>👋 Welcome to the Profile Counter API</h1>
+            <p>To use this service, append your desired key to the URL.</p>
+            <ul>
+                <li><code>GET /&lt;your-key&gt;/count.svg</code>: View and increment SVG counter</li>
+                <li><code>GET /&lt;your-key&gt;/</code>: Get current count as JSON</li>
+            </ul>
+            <p>Example: <a href="/example/count.svg">/example/count.svg</a></p>
+        </body>
+    </html>
+    """
+    return Response(content=html_content, media_type="text/html")
+
+
 if __name__ == "__main__":
     import os
 
