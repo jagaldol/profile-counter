@@ -28,6 +28,7 @@ This project is self-hosted using Docker Compose. The backend is powered by a Fa
 Clone the repository and run the following command:
 
 ```bash
+cp .env.example .env
 docker-compose up -d
 ```
 
@@ -41,7 +42,7 @@ This will launch:
 Once running, you can embed the counter using:
 
 ```html
-<img src="http://localhost:3001/profile-counter/:your-key:/count.svg" />
+<img src="http://localhost:8000/profile-counter/:your-key:/count.svg" />
 ```
 
 Replace `:your-key:` with your own identifier.
