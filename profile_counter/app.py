@@ -89,10 +89,10 @@ def root():
             <h1>👋 Welcome to the Profile Counter API</h1>
             <p>To use this service, append your desired key to the URL.</p>
             <ul>
-                <li><code>GET /&lt;your-key&gt;/count.svg</code>: View and increment SVG counter</li>
-                <li><code>GET /&lt;your-key&gt;/</code>: Get current count as JSON</li>
+                <li><code>GET &lt;your-key&gt;/count.svg</code>: View and increment SVG counter</li>
+                <li><code>GET &lt;your-key&gt;/</code>: Get current count as JSON</li>
             </ul>
-            <p>Example: <a href="/example/count.svg">/example/count.svg</a></p>
+            <p>Example: <a href="example/count.svg">example/count.svg</a></p>
         </body>
     </html>
     """
